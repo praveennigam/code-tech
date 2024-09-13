@@ -47,7 +47,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative border-neutral-900 pb-10 lg:mb-16 mx-6 px-4 sm:px-8 md:px-10 rounded-3xl md:py-10  border-b  ">
+    <div className="relative border-neutral-900 pb-10 lg:mb-16 mx-6 px-4 sm:px-8 md:px-10 rounded-3xl md:py-10 border-b">
       <motion.div
         className="my-8 flex flex-wrap"
         initial={{ opacity: 0 }}
@@ -64,28 +64,29 @@ const Hero = () => {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-6 pt-6 text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
+            className="pb-6 pt-6 text-5xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
           >
             <b>
+              {/* Ensure inline text stays responsive */}
               <motion.span
                 animate={gradientAnimation}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent inline-block"
                 style={{ backgroundSize: "200%" }}
               >
-                APP & WEB DEVELOPMENT
-              </motion.span>
-
+                WEB & APP DEVELOPMENT
+              </motion.span>{" "}
               <motion.span
                 animate={gradientAnimation}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                className="bg-gradient-to-r from-slate-900 via-blue-800 to-green-300 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-slate-900 via-blue-800 to-green-300 bg-clip-text text-transparent inline-block"
                 style={{ backgroundSize: "200%" }}
               >
-                <span></span> AGENCY
+                {" "}
               </motion.span>
             </b>
           </motion.h1>
+
           <motion.div
             variants={container(0.5)}
             initial="hidden"
@@ -101,26 +102,28 @@ const Hero = () => {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.5 }}
               >
-                <b className="text-blue-500"> {currentWord}</b>{" "}
-              </motion.span>{" "}
+                <b className="text-blue-500">{currentWord}</b>{" "}
+              </motion.span>
               .
             </b>
           </motion.div>
+          {/* HERO_CONTENT takes full width */}
           <motion.p
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="my-2 max-w-full py-6 font-medium tracking-wide text-gradient-to-r from-blue-600 via-slate-500 to-purple-700 text-center lg:text-left"
+            className="my-2 py-6 font-medium tracking-wide w-full text-center lg:text-left"
           >
             {HERO_CONTENT}
           </motion.p>
           <button
             onClick={() => setShowMore(true)}
-            className=" bg-gradient-to-r  from-blue-600 via-blue-600 to-purple-600 bg mt-4 px-6 py-3  text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16"
+            className="bg-gradient-to-r from-blue-600 via-blue-600 to-purple-600 bg mt-4 px-6 py-3 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16"
           >
             Explore
           </button>
         </motion.div>
+
         <motion.div
           className="w-full lg:w-1/2 flex items-center justify-center lg:justify-end lg:pl-8"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -159,74 +162,7 @@ const Hero = () => {
           >
             &times;
           </button>
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Why Choose CODE-TECH?</h2>
-            <ul className="list-disc list-inside mb-6">
-              <li className="mb-2">
-                <b>Customized Web Solutions:</b> Your business is unique, and
-                your website should reflect that. We offer bespoke web
-                development services tailored to your specific needs and goals.
-                From custom designs to unique functionalities, our team ensures
-                your website stands out and serves as a powerful tool for your
-                business.
-              </li>
-              <li className="mb-2">
-                <b>Cutting-Edge Technologies:</b> Stay ahead of the curve with
-                our expertise in the latest web technologies and trends. We use
-                the most advanced tools and frameworks to build websites that
-                are not only visually appealing but also highly functional and
-                secure.
-              </li>
-              <li className="mb-2">
-                <b>User-Centric Design:</b> Great design is more than just
-                aesthetics; it’s about creating an exceptional user experience.
-                Our designers focus on intuitive navigation, responsive layouts,
-                and engaging visuals to ensure your visitors have a seamless and
-                enjoyable experience on your site.
-              </li>
-              <li className="mb-2">
-                <b>SEO and Performance Optimization:</b> What’s a great website
-                if it’s not seen? We incorporate best practices for SEO and
-                performance optimization from the ground up, ensuring that your
-                site ranks well in search engines and loads quickly, enhancing
-                user satisfaction and engagement.
-              </li>
-              <li className="mb-2">
-                <b>End-to-End Support:</b> From the initial concept to the final
-                launch, and beyond, we provide comprehensive support throughout
-                the development process. Our team is always here to assist with
-                updates, maintenance, and any challenges you may encounter.
-              </li>
-            </ul>
-            <h3 className="text-xl font-semibold mb-4">
-              Success Stories from Our Clients
-            </h3>
-            <blockquote className="mb-4 italic">
-              "Working with [Your Company Name] was a game-changer for us. They
-              took our vision and turned it into a stunning website that not
-              only looks great but performs exceptionally well. The whole
-              process was smooth and professional." – [Client Name], [Position],
-              [Company]
-            </blockquote>
-            <blockquote className="mb-4 italic">
-              "The team at [Your Company Name] went above and beyond to ensure
-              our site met all our requirements. Their expertise in web
-              development and dedication to customer satisfaction was evident
-              throughout our project." – [Client Name], [Position], [Company]
-            </blockquote>
-            <p className="mt-4">
-              Ready to Elevate Your Online Presence? Whether you’re launching a
-              new website or revamping an existing one, [Your Company Name] is
-              here to help. Contact us today to discuss your project and
-              discover how we can turn your digital vision into reality.
-            </p>
-            <a
-              href="[contact link]"
-              className="mt-4 inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
-            >
-              Get a Free Consultation
-            </a>
-          </div>
+          {/* Content goes here */}
         </motion.div>
       )}
     </div>
