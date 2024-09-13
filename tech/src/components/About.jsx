@@ -31,10 +31,10 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <span className="bg-gradient-to-r from-orange-900 via-blue-400 font-semibold to-yellow-300 bg-clip-text mr-2 text-transparent">
+        <span className="bg-gradient-to-r from-blue-700 via-orange-900 font-semibold to-yellow-300 bg-clip-text mr-2 text-transparent">
           About{" "}
         </span>{" "}
-        <span className="text-neutral-500">Me</span>
+        <span className="text-neutral-500">Us</span>
       </motion.h1>
 
       {/* Introduction Section */}
