@@ -24,13 +24,16 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://code-tech-1.onrender.com/api/feedback", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://code-tech-1.onrender.com/api/feedback",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         toast.success("Thank you for your feedback!");
@@ -61,7 +64,7 @@ const Contact = () => {
       >
         Contact
         <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-          Me
+          <span></span> Me
         </span>
       </motion.h1>
 
