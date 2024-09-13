@@ -27,7 +27,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Logo"
-          className="h-14 w-14 rounded-full mx-1 my-1 logo relative z-10"
+          className="h-12 w-12 rounded-full mx-1 my-1 logo relative z-10"
         />
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 opacity-50 z-0"></div>
       </motion.div>

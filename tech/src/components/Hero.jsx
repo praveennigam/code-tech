@@ -64,7 +64,7 @@ const Hero = () => {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-6 pt-6 text-xl sm:text-5xl md:text-3xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
+            className="pb-6 pt-6 text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
           >
             <b>
               <motion.span
@@ -73,7 +73,7 @@ const Hero = () => {
                 className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-transparent"
                 style={{ backgroundSize: "200%" }}
               >
-                APP & WEB
+                APP & WEB DEVELOPMENT
               </motion.span>
 
               <motion.span
@@ -82,7 +82,7 @@ const Hero = () => {
                 className="bg-gradient-to-r from-slate-900 via-blue-800 to-green-300 bg-clip-text text-transparent"
                 style={{ backgroundSize: "200%" }}
               >
-                <span></span> DEVELOPMENT AGENCY
+                <span></span> AGENCY
               </motion.span>
             </b>
           </motion.h1>
