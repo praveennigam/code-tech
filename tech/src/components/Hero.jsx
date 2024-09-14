@@ -98,7 +98,7 @@ const Hero = () => {
             animate="visible"
             className="bg-gradient-to-r from-pink-400 via-blue-400 to-purple-400 bg-clip-text text-xl sm:text-2xl tracking-tight text-transparent font-thin"
           >
-            <b>
+            <b className="">
               Develop your{" "}
               <motion.span
                 key={currentWord}
@@ -107,7 +107,9 @@ const Hero = () => {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.5 }}
               >
-                <b className="text-blue-500">{currentWord}</b>{" "}
+                <b className="text-blue-500 p-2 border-b border-gray-300 ">
+                  {currentWord}
+                </b>{" "}
               </motion.span>
               .
             </b>
@@ -116,9 +118,21 @@ const Hero = () => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="my-2 py-6 font-medium tracking-wide w-full text-center lg:text-left"
+            className="text-lg font-light mt-10"
           >
-            {HERO_CONTENT}
+            Welcome to{" "}
+            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
+              CODE-TECH,{" "}
+            </span>{" "}
+            where innovative web development meets exceptional design. In
+            today’s digital world, your website is often the first impression
+            potential customers have of your business. Make it count with a
+            website that not only looks stunning but performs flawlessly. At
+            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-lg sm:text-xl tracking-normal text-transparent font-bold">
+              &nbsp; CODE-TECH,{" "}
+            </span>{" "}
+            we specialize in crafting tailor-made web solutions that drive
+            results and elevate your online presence.
           </motion.p>
           <button
             onClick={() => setShowMore(true)}
@@ -227,7 +241,7 @@ const Hero = () => {
               <p className="text-lg mb-4">We'd love to hear from you!</p>
               <a
                 href="mailto:techsiksha@1999gmail.com"
-                className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg inline-block hover:bg-blue-500 transition duration-300"
+                className=" bg-gradient-to-r from-green-600 via-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg inline-block hover:bg-blue-500 transition duration-300"
               >
                 Send us an email
               </a>

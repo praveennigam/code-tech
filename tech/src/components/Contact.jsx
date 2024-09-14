@@ -176,7 +176,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-slate-900 via-blue-800 to-green-500 text-white py-2 px-4 rounded"
+            className="w-full bg-gradient-to-r from-slate-900 via-blue-800 to-green-800 text-white py-2 px-4 rounded"
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>

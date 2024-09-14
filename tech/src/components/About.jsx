@@ -151,7 +151,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
-            className="w-full md:w-1/2 lg:w-1/4 p-4 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg rounded-lg"
+            className="w-full md:w-1/2 lg:w-1/4 p-4 border border-blue-600 shadow-lg rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-2">Discover</h3>
             <p>
@@ -163,7 +163,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="w-full md:w-1/2 lg:w-1/4 p-4 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg rounded-lg"
+            className="w-full md:w-1/2 lg:w-1/4 p-4 border border-blue-600 shadow-lg rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-2">Web Development</h3>
             <p>
@@ -175,7 +175,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="w-full md:w-1/2 lg:w-1/4 p-4 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg rounded-lg"
+            className="w-full md:w-1/2 lg:w-1/4 p-4 border border-blue-600 shadow-lg rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-2">App Development</h3>
             <p>We implement functionalities to bring the App into life.</p>
@@ -184,7 +184,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="w-full md:w-1/2 lg:w-1/4 p-4 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg rounded-lg"
+            className="w-full md:w-1/2 lg:w-1/4 p-4 border border-blue-600 shadow-lg rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-2">Designing</h3>
             <p>
@@ -196,7 +196,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="w-full md:w-1/2 lg:w-1/4 p-4 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg rounded-lg"
+            className="w-full md:w-1/2 lg:w-1/4 p-4 border border-blue-600 shadow-lg rounded-lg"
           >
             <h3 className="text-xl font-semibold mb-2">Marketing</h3>
             <p>

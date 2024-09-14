@@ -13,14 +13,18 @@ const Study = () => {
     <div className="border-b my-7 border-neutral-900 pb-4">
       {/* Top Section with Lists and Logo */}
       <div className="flex flex-wrap mb-8">
-        {/* Services List */}
-        <div className="w-full md:w-1/2 p-4">
-          <h2 className="text-3xl font-semibold mb-4 text-center md:text-left">
+        {/* Centered Title */}
+        <div className="w-full text-center mb-8">
+          <h2 className="text-3xl font-semibold">
             <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent">
               Our Services
             </span>
           </h2>
-          <ul className="list-disc list-inside text-left  max-w-xl mx-auto">
+        </div>
+
+        {/* Services List */}
+        <div className="w-full md:w-1/2 p-4">
+          <ul className="list-disc list-inside text-left max-w-xl mx-auto">
             {[
               "Website development",
               "Digital marketing",
@@ -47,8 +51,12 @@ const Study = () => {
         </div>
 
         {/* Logo */}
-        <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
-          <img src={logo} alt="Logo" className="w-3/4 max-w-sm object-cover" />
+        <div className="w-full md:w-1/2 p-2 flex justify-center items-center">
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-3/4 max-w-sm object-cover rounded-full"
+          />
         </div>
       </div>
 
@@ -58,8 +66,6 @@ const Study = () => {
           Watch Our Video
         </h2>
         <div className="relative pb-[56.25%] mb-8">
-          {" "}
-          {/* 16:9 Aspect Ratio */}
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/0REQiY6ftng" // Updated to embed URL format
