@@ -32,14 +32,47 @@ const generatePdf = (feedback) => {
 
     doc.pipe(stream);
 
-    doc.fontSize(18).text('Feedback Invoice', { align: 'center' });
-    doc.moveDown();
+    // Title
+    doc.fontSize(24)
+        .font('Helvetica-Bold')
+        .text('Feedback Invoice', { align: 'center', underline: true })
+        .moveDown(1);
 
-    doc.fontSize(14).text(`Name: ${feedback.name}`);
-    doc.text(`Email: ${feedback.email}`);
-    doc.text(`Subject: ${feedback.subject}`);
-    doc.text(`Rating: ${feedback.rating}`);
-    doc.text(`Message: ${feedback.message}`);
+    // Add a line separator
+    doc.moveTo(50, doc.y)
+        .lineTo(550, doc.y)
+        .strokeColor('#000000')
+        .stroke()
+        .moveDown(1);
+
+    // Feedback details
+    doc.fontSize(14)
+        .font('Helvetica')
+        .fillColor('#333333'); // Dark gray color
+
+    const details = [
+        { label: 'Name:', value: feedback.name },
+        { label: 'Email:', value: feedback.email },
+        { label: 'Phone:', value: feedback.subject },
+        { label: 'Rating:', value: feedback.rating },
+        { label: 'Subject:', value: feedback.message }
+    ];
+
+    details.forEach(detail => {
+        doc.fontSize(12)
+            .font('Helvetica-Bold')
+            .text(detail.label, { continued: true })
+            .font('Helvetica')
+            .text(` ${detail.value}`)
+            .moveDown(0.5);
+    });
+
+    // Add a footer with additional information
+    doc.moveDown(1)
+        .fontSize(10)
+        .font('Helvetica-Oblique')
+        .fillColor('#555555')
+        .text('Thank you for your feedback!', { align: 'center' });
 
     doc.end();
 

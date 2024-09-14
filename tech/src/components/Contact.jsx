@@ -129,7 +129,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="subject" className="block text-lg font-medium mb-2">
-              Subject
+              Phone
             </label>
             <input
               type="text"
@@ -161,7 +161,7 @@ const Contact = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="message" className="block text-lg font-medium mb-2">
-              Message
+              Subject
             </label>
             <textarea
               id="message"

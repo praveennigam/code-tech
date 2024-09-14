@@ -50,8 +50,8 @@ const About = () => {
           Together We Innovate, Together We Succeed.
           <br />
           At{" "}
-          <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-lg sm:text-xl tracking-normal text-transparent font-bold">
-            &nbsp;CODE-TECH,{" "}
+          <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
+            &nbsp; CODE-TECH,{" "}
           </span>{" "}
           we're more than just creators - we're a team of zealous innovators,
           constantly pushing the boundaries to engineer exceptional solutions
@@ -76,7 +76,9 @@ const About = () => {
               duration={5}
               separator=","
             />
-            <p className="mt-4 text-lg font-light">Achievements</p>
+            <p className="mt-4 text-lg font-light bg-gradient-to-r from-slate-200 via-blue-400 to-green-300 bg-clip-text mr-2 text-transparent">
+              Achievements
+            </p>
           </div>
         </motion.div>
       </div>

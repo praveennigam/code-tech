@@ -128,7 +128,7 @@ const Hero = () => {
             today’s digital world, your website is often the first impression
             potential customers have of your business. Make it count with a
             website that not only looks stunning but performs flawlessly. At
-            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-lg sm:text-xl tracking-normal text-transparent font-bold">
+            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
               &nbsp; CODE-TECH,{" "}
             </span>{" "}
             we specialize in crafting tailor-made web solutions that drive
@@ -136,7 +136,7 @@ const Hero = () => {
           </motion.p>
           <button
             onClick={() => setShowMore(true)}
-            className="bg-gradient-to-r from-blue-600 via-blue-600 to-purple-600 bg mt-4 px-6 py-3 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16"
+            className="bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 bg mt-4 px-6 py-3 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16"
           >
             Explore
           </button>
