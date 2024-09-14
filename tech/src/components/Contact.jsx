@@ -60,11 +60,11 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl  bg-gradient-to-r from-pink-100 via-purple-200 to-blue-500 bg-clip-text text-transparent font-bold "
       >
         Contact
         <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-          <span></span> Me
+          <span></span> Us
         </span>
       </motion.h1>
 
@@ -110,7 +110,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border  bg-transparent border-gray-600 rounded"
             />
           </div>
           <div className="mb-4">
@@ -124,7 +124,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border  bg-transparent border-gray-600 rounded"
             />
           </div>
           <div className="mb-4">
@@ -138,7 +138,7 @@ const Contact = () => {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border bg-transparent border-gray-600 rounded"
             />
           </div>
           <div className="mb-4">
@@ -150,7 +150,7 @@ const Contact = () => {
               name="rating"
               value={formData.rating}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full px-4 py-2 border  bg-transparent border-gray-600 rounded"
             >
               <option value="1">1 - Very Poor</option>
               <option value="2">2 - Poor</option>
@@ -169,14 +169,14 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded"
+              className="w-full bg-transparent border-gray-600 px-4 py-2 border  rounded"
               rows="4"
             />
           </div>
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded"
+            className="w-full bg-gradient-to-r from-slate-900 via-blue-800 to-green-500 text-white py-2 px-4 rounded"
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>

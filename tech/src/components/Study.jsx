@@ -20,7 +20,7 @@ const Study = () => {
               Our Services
             </span>
           </h2>
-          <ul className="list-disc list-inside text-left max-w-xl mx-auto">
+          <ul className="list-disc list-inside text-left  max-w-xl mx-auto">
             {[
               "Website development",
               "Digital marketing",
@@ -53,7 +53,7 @@ const Study = () => {
       </div>
 
       {/* YouTube Video */}
-      <div className="text-center mb-8">
+      <div className="text-center mt-8 mb-8">
         <h2 className="bg-gradient-to-r from-pink-600 via-slate-400 to-purple-700 bg-clip-text text-transparent font-bold text-3xl mb-8">
           Watch Our Video
         </h2>
@@ -72,7 +72,7 @@ const Study = () => {
       </div>
 
       {/* Additional Image */}
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mt-32 mb-8">
         <img
           src={additionalImage}
           alt="Additional"

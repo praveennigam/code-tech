@@ -138,7 +138,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.7 }}
-              className="bg-gradient-to-r from-cyan-400 to-blue-800 p-6 rounded-lg shadow-lg max-w-xs mx-2 mb-8"
+              className="bg-transparent p-6 rounded-lg border border-gray-500 border-solid  shadow-lg max-w-xs mx-2 mb-8"
             >
               <img
                 src={entry.image}

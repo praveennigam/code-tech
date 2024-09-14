@@ -31,10 +31,12 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <span className="bg-gradient-to-r from-blue-700 via-orange-900 font-semibold to-yellow-300 bg-clip-text mr-2 text-transparent">
+        <span className=" font-semibold bg-gradient-to-r from-slate-600 via-blue-800 to-green-500 bg-clip-text mr-2 text-transparent">
           About{" "}
         </span>{" "}
-        <span className="text-neutral-500">Us</span>
+        <span className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent inline-block font-extrabold">
+          Us
+        </span>
       </motion.h1>
 
       {/* Introduction Section */}
@@ -77,7 +79,7 @@ const About = () => {
 
       {/* Statistics Section */}
       <div className="w-full text-center my-12">
-        <h2 className="text-3xl font-bold mb-8">Key Statistics</h2>
+        <h2 className="text-3xl font-bold mb-8 ">Key Statistics</h2>
         <div className="flex flex-wrap justify-center gap-8 md:gap-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -94,7 +96,9 @@ const About = () => {
               separator=","
               suffix="+"
             />
-            <p className="text-lg mt-2">Products Delivered</p>
+            <p className="text-lg mt-2 bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent ">
+              Products Delivered
+            </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -111,7 +115,9 @@ const About = () => {
               separator=","
               suffix="+"
             />
-            <p className="text-lg mt-2">Creative Nerds Under One Roof</p>
+            <p className="text-lg mt-2 bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent ">
+              Creative Nerds Under One Roof
+            </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -128,14 +134,16 @@ const About = () => {
               separator=","
               suffix="+"
             />
-            <p className="text-lg mt-2">Happy Client</p>
+            <p className="text-lg mt-2 bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent ">
+              Happy Client
+            </p>
           </motion.div>
         </div>
       </div>
 
       {/* Services Section */}
       <div className="bg-transparent py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-200 via-blue-400 to-red-800 bg-clip-text  text-transparent ">
           What We Can Do For You
         </h2>
         <div className="flex flex-wrap justify-center gap-8">

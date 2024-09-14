@@ -18,7 +18,7 @@ const container = (delay) => ({
 });
 
 // Words to animate
-const words = ["Website", "Business", "Brand", "Strategy "];
+const words = ["Website", "Business", "Brand", "Strategy"];
 
 const Hero = () => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -46,6 +46,12 @@ const Hero = () => {
     arrows: false,
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission (e.g., send email, show confirmation, etc.)
+    console.log("Form submitted");
+  };
+
   return (
     <div className="relative border-neutral-900 pb-10 lg:mb-16 mx-6 px-4 sm:px-8 md:px-10 rounded-3xl md:py-10 border-b">
       <motion.div
@@ -67,7 +73,6 @@ const Hero = () => {
             className="pb-6 pt-6 text-5xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
           >
             <b>
-              {/* Ensure inline text stays responsive */}
               <motion.span
                 animate={gradientAnimation}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
@@ -107,7 +112,6 @@ const Hero = () => {
               .
             </b>
           </motion.div>
-          {/* HERO_CONTENT takes full width */}
           <motion.p
             variants={container(1)}
             initial="hidden"
@@ -162,7 +166,73 @@ const Hero = () => {
           >
             &times;
           </button>
-          {/* Content goes here */}
+          <div className="max-w-4xl mx-auto p-6  rounded-lg shadow-lg">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-3xl font-bold mb-4"
+            >
+              Why Choose Us
+            </motion.h2>
+            <motion.ul
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="list-disc list-inside mb-4"
+            >
+              <li className="mb-2">
+                Experienced and dedicated team of developers.
+              </li>
+              <li className="mb-2">
+                Custom solutions tailored to your specific needs.
+              </li>
+              <li className="mb-2">
+                Cutting-edge technology and innovative approaches.
+              </li>
+              <li className="mb-2">
+                Timely delivery and excellent customer support.
+              </li>
+              <li className="mb-2">
+                Competitive pricing and flexible packages.
+              </li>
+            </motion.ul>
+            <motion.p
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-lg mb-6"
+            >
+              Our mission is to empower businesses by providing exceptional
+              digital solutions that drive success. We take pride in our work
+              and are committed to exceeding your expectations.
+            </motion.p>
+
+            {/* Additional Content */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="mb-6"
+            >
+              <h3 className="text-2xl font-semibold mb-4">Our Services</h3>
+              <ul className="list-disc list-inside pl-6 mb-6">
+                <li className="mb-2">Custom Website Design and Development</li>
+                <li className="mb-2">Mobile App Development</li>
+                <li className="mb-2">E-commerce Solutions</li>
+                <li className="mb-2">Digital Marketing Services</li>
+                <li className="mb-2">SEO and Content Optimization</li>
+              </ul>
+              <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
+              <p className="text-lg mb-4">We'd love to hear from you!</p>
+              <a
+                href="mailto:techsiksha@1999gmail.com"
+                className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg inline-block hover:bg-blue-500 transition duration-300"
+              >
+                Send us an email
+              </a>
+            </motion.div>
+          </div>
         </motion.div>
       )}
     </div>
