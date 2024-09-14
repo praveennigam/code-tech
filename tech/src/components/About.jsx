@@ -49,9 +49,13 @@ const About = () => {
         <p className="text-lg font-light">
           Together We Innovate, Together We Succeed.
           <br />
-          At CODE-TECH, we're more than just creators - we're a team of zealous
-          innovators, constantly pushing the boundaries to engineer exceptional
-          solutions and deliver unmatched excellence.
+          At{" "}
+          <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-lg sm:text-xl tracking-normal text-transparent font-bold">
+            &nbsp;CODE-TECH,{" "}
+          </span>{" "}
+          we're more than just creators - we're a team of zealous innovators,
+          constantly pushing the boundaries to engineer exceptional solutions
+          and deliver unmatched excellence.
         </p>
       </motion.div>
 
