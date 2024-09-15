@@ -68,7 +68,7 @@ const Study = () => {
         <div className="relative pb-[56.25%] mb-8">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/0REQiY6ftng" // Updated to embed URL format
+            src="https://www.youtube.com/embed/xM-Yd-hEU1Y" // Updated to embed URL format
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
