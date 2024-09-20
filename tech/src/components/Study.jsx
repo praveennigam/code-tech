@@ -55,7 +55,7 @@ const Study = () => {
           <img
             src={logo}
             alt="Logo"
-            className="w-3/4 max-w-sm object-cover rounded-full"
+            className="w-3/6 max-w-sm object-cover rounded-full"
           />
         </div>
       </div>
@@ -68,7 +68,7 @@ const Study = () => {
         <div className="relative pb-[56.25%] mb-8">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/xM-Yd-hEU1Y" // Updated to embed URL format
+            src="https://www.youtube.com/embed/HljeMpKxcYE?controls=0" // Updated URL to hide controls
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

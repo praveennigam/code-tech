@@ -46,7 +46,7 @@ const About = () => {
         transition={{ duration: 2 }}
         className="text-center mb-12"
       >
-        <p className="text-lg font-light">
+        <p className="text-md font-light">
           Together We Innovate, Together We Succeed.
           <br />
           At{" "}

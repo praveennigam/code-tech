@@ -118,7 +118,7 @@ const Hero = () => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="text-lg font-light mt-10"
+            className="text-md font-thin mt-10"
           >
             Welcome to{" "}
             <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
