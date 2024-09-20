@@ -51,7 +51,7 @@ const Navbar = () => {
         />
         <FaWhatsapp
           className="text-white cursor-pointer text-lg"
-          onClick={() => window.open("https://wa.me/+919755359109", "_blank")}
+          onClick={() => window.open("https://wa.me/+919109481480", "_blank")}
         />
         <FaPhone
           className="text-white cursor-pointer text-lg"
