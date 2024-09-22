@@ -122,14 +122,14 @@ const Hero = () => {
           >
             Welcome to{" "}
             <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
-              CODE-TECH,{" "}
+              Thewebseller,{" "}
             </span>{" "}
             where innovative web development meets exceptional design. In
             today’s digital world, your website is often the first impression
             potential customers have of your business. Make it count with a
             website that not only looks stunning but performs flawlessly. At
             <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
-              &nbsp; CODE-TECH,{" "}
+              &nbsp; Thewebseller,{" "}
             </span>{" "}
             we specialize in crafting tailor-made web solutions that drive
             results and elevate your online presence.

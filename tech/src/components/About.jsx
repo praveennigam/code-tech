@@ -51,7 +51,7 @@ const About = () => {
           <br />
           At{" "}
           <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
-            &nbsp; CODE-TECH,{" "}
+            &nbsp; Thewebseller,{" "}
           </span>{" "}
           we're more than just creators - we're a team of zealous innovators,
           constantly pushing the boundaries to engineer exceptional solutions
