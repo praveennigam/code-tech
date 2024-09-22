@@ -51,14 +51,14 @@ const App = () => {
       </div>
 
       {showButton && (
-        <span className="bg-black fixed bottom-5 right-2 p-2 h-12 w-9 opacity-50 hover:opacity-900 hover:bg-green-900 rounded-xl ">
-        <button 
-          onClick={scrollToTop} 
-          className="fixed bottom-5 right-2 p-2 bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-4xl  tracking-normal text-transparent font-bold opacity-100 hover:[bg-gradient-to-r from-green-400  to-violet-800]"
-          aria-label="Back to Top"
-        >
-          ↑
-        </button>
+        <span className="  ">
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-5 right-2 p-2 h-12 w-9 opacity-50 hover:opacity-900 hover:bg-blue-800 bg-black rounded-xl"
+            aria-label="Back to Top"
+          >
+            ↑
+          </button>
         </span>
       )}
     </div>

@@ -120,7 +120,7 @@ const Hero = () => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="text-lg font-md  mt-4 w-full tracking-tight sm:text-left" // Add w-full for full width
+            className="mt-4 text-md font-light" // Add w-full for full width
           >
             Welcome to{" "}
             <span className="bg-gradient-to-r from-yellow-400 to-violet-800 bg-clip-text text-sm sm:text-xl tracking-light text-transparent font-bold">
