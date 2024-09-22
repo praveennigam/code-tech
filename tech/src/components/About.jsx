@@ -23,7 +23,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="border-b border-neutral-950 pb-10 py-6">
+    <div className="border-t border-b  border-neutral-950 pb-10 py-6">
       {/* Heading Section */}
       <motion.h1
         className="my-16 text-center text-4xl font-sans"

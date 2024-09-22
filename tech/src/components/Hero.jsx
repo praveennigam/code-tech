@@ -53,7 +53,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative border-neutral-900 pb-10 lg:mb-16 mx-6 px-4 sm:px-8 md:px-10 rounded-3xl md:py-10 border-b">
+    <div className="relative border-neutral-900 pb-10 lg:mb-16 mx-6 my-20 px-4 sm:px-8 md:px-10 rounded-3xl md:py-10 ">
       <motion.div
         className="my-8 flex flex-wrap"
         initial={{ opacity: 0 }}
@@ -70,17 +70,17 @@ const Hero = () => {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-6 pt-6 text-5xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
+            className="pb-6 pt-6 text-2xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tight lg:mt-5 font-sans font-bold text-white"
           >
-            <b>
+            <b className="block w-full h-16 overflow-hidden whitespace-nowrap">
               <motion.span
                 animate={gradientAnimation}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-                className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-center text-transparent inline-block"
+                className="bg-gradient-to-r from-orange-400 via-blue-800 to-green-800 bg-clip-text text-transparent inline-block"
                 style={{ backgroundSize: "200%" }}
               >
                 WEB & APP DEVELOPMENT
-              </motion.span>{" "}
+              </motion.span>
               <motion.span
                 animate={gradientAnimation}
                 transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
@@ -92,51 +92,54 @@ const Hero = () => {
             </b>
           </motion.h1>
 
+
           <motion.div
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
             className="bg-gradient-to-r from-pink-400 via-blue-400 to-purple-400 bg-clip-text text-xl sm:text-2xl tracking-tight text-transparent font-thin"
           >
-            <b className="">
+            <b className="flex items-center">
               Develop your{" "}
               <motion.span
                 key={currentWord}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 20 }} // Start from the right
+                animate={{ opacity: 1, x: 0 }} // Slide in to the center
+                exit={{ opacity: 0, x: -20 }} // Slide out to the left
                 transition={{ duration: 0.5 }}
+                className="inline-block border-b border-gray-700" // Ensure it's inline
               >
-                <b className="text-blue-500 p-2 border-b border-gray-300 ">
-                  {currentWord}
-                </b>{" "}
+                <b className="text-blue-500">
+                  &nbsp; {currentWord}
+                </b>
               </motion.span>
-              .
+
             </b>
           </motion.div>
           <motion.p
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="text-md font-thin mt-10"
+            className="text-lg font-md  mt-4 w-full tracking-tight sm:text-left" // Add w-full for full width
           >
             Welcome to{" "}
-            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
+            <span className="bg-gradient-to-r from-yellow-400 to-violet-800 bg-clip-text text-sm sm:text-xl tracking-light text-transparent font-bold">
               Thewebseller,{" "}
             </span>{" "}
             where innovative web development meets exceptional design. In
             today’s digital world, your website is often the first impression
             potential customers have of your business. Make it count with a
             website that not only looks stunning but performs flawlessly. At
-            <span className="bg-gradient-to-r from-yellow-400  to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold ">
+            <span className="bg-gradient-to-r from-yellow-400 to-violet-800 bg-clip-text text-sm sm:text-xl tracking-normal text-transparent font-bold">
               &nbsp; Thewebseller,{" "}
             </span>{" "}
             we specialize in crafting tailor-made web solutions that drive
             results and elevate your online presence.
           </motion.p>
+
           <button
             onClick={() => setShowMore(true)}
-            className="bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 bg mt-4 px-6 py-3 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16"
+            className="bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 bg mt-4 px-4 py-2 text-white font-sm rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 mb-16 right-0"
           >
             Explore
           </button>

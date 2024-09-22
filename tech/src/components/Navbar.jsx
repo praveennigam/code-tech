@@ -17,7 +17,7 @@ const rotateAnimation = {
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6 bg-transparent text-white">
+    <nav className="mb-10 flex items-center justify-between py-6 border-b  border-neutral-500  ">
       <motion.div
         className="flex-shrink-0 items-center relative"
         animate={rotateAnimation}
@@ -26,7 +26,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Logo"
-          className="h-12 w-12 rounded-full mx-1 my-1 logo relative z-10"
+          className="h-8 w-8 rounded-full mx-1 my-1 logo relative z-10"
         />
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 opacity-50 z-0"></div>
       </motion.div>
