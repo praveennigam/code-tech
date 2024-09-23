@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// Random feedback images and texts
+// Extended feedback entries
 const feedbackEntries = [
   {
     image: "https://randomuser.me/api/portraits/men/1.jpg",
@@ -43,9 +43,62 @@ const feedbackEntries = [
     image: "https://randomuser.me/api/portraits/women/10.jpg",
     text: "Fantastic job. We are very pleased with the outcome.",
   },
+  {
+    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    text: "Reliable and efficient, a true professional!",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    text: "Great collaboration, looking forward to our next project!",
+  },
 ];
 
 const Projects = () => {
+  const projectItems = [
+    {
+      name: "HUMMCARE",
+      category: "Healthcare",
+      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      description: "Innovative solutions for healthcare management.",
+    },
+    {
+      name: "POSHN",
+      category: "Business",
+      image: "https://images.pexels.com/photos/6932532/pexels-photo-6932532.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "Business solutions with a modern approach.",
+    },
+    {
+      name: "CP PLUS",
+      category: "E-Commerce",
+      image: "https://images.pexels.com/photos/5775937/pexels-photo-5775937.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "E-commerce platform with extensive features.",
+    },
+    {
+      name: "ACROSS THE GLOBE",
+      category: "Social Network",
+      image: "https://images.pexels.com/photos/3314294/pexels-photo-3314294.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "Connect people globally through a social network.",
+    },
+    {
+      name: "FITNESS PRO",
+      category: "Fitness",
+      image: "https://images.pexels.com/photos/3824406/pexels-photo-3824406.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "Your ultimate fitness companion app.",
+    },
+    {
+      name: "TRAVEL GURU",
+      category: "Travel",
+      image: "https://images.pexels.com/photos/33972/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+      description: "Explore the world with our travel planning app.",
+    },
+    {
+      name: "CLEAN EATS",
+      category: "Food & Drink",
+      image: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "Healthy meal prep solutions at your fingertips.",
+    },
+  ];
+
   return (
     <div className="border-b border-neutral-950 pb-16">
       {/* Header Section */}
@@ -63,36 +116,7 @@ const Projects = () => {
       {/* Projects Section */}
       <div className="flex flex-wrap justify-center">
         <div className="w-full lg:w-2/3 space-y-8">
-          {[
-            {
-              name: "HUMMCARE",
-              category: "Healthcare",
-              image:
-                "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200",
-              description: "Innovative solutions for healthcare management.",
-            },
-            {
-              name: "POSHN",
-              category: "Business",
-              image:
-                "https://images.pexels.com/photos/6932532/pexels-photo-6932532.jpeg?auto=compress&cs=tinysrgb&w=600",
-              description: "Business solutions with a modern approach.",
-            },
-            {
-              name: "CP PLUS",
-              category: "E-Commerce",
-              image:
-                "https://images.pexels.com/photos/5775937/pexels-photo-5775937.jpeg?auto=compress&cs=tinysrgb&w=600",
-              description: "E-commerce platform with extensive features.",
-            },
-            {
-              name: "ACROSS THE GLOBE",
-              category: "Social Network",
-              image:
-                "https://images.pexels.com/photos/3314294/pexels-photo-3314294.jpeg?auto=compress&cs=tinysrgb&w=600",
-              description: "Connect people globally through a social network.",
-            },
-          ].map((item, index) => (
+          {projectItems.map((item, index) => (
             <motion.div
               key={index}
               whileInView={{ opacity: 1, x: 0 }}
@@ -138,7 +162,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.7 }}
-              className="bg-transparent p-6 rounded-lg border border-gray-500 border-solid  shadow-lg max-w-xs mx-2 mb-8"
+              className="bg-transparent p-6 rounded-lg border border-gray-500 border-solid shadow-lg max-w-xs mx-2 mb-8"
             >
               <img
                 src={entry.image}

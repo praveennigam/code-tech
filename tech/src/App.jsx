@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Study from "./components/Study";
-import Projects from "./components/Contact";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -244,7 +244,7 @@ const Hero = () => {
               <p className="text-lg mb-4">We'd love to hear from you!</p>
               <a
                 href="mailto:techsiksha@1999gmail.com"
-                className=" bg-gradient-to-r from-green-600 via-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg inline-block hover:bg-blue-500 transition duration-300"
+                className=" bg-gradient-to-r from-green-600  to-purple-600 text-white px-4 py-2 rounded-lg shadow-lg inline-block hover:bg-blue-500 transition duration-300"
               >
                 Send us an email
               </a>
